@@ -1,0 +1,232 @@
+body {
+    background-color: #313131;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #000;
+    padding: 20px 0;
+}
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    margin-bottom: 10px;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+.nav-stuff {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-stuff li {
+    margin: 0 15px;
+}
+.nav-stuff a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+.nav-stuff a:hover {
+    color: #96bee9;
+}
+.profile-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.profile-image { /* had to google how to do this image fitting */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.profile-main-content {
+    max-width: 600px;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+.btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #96bee9;
+}
+.about {
+    padding: 50px;
+    background-color: #333;
+    margin-top: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.contact {
+    background-color: #313131;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact-form input,.contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+}
+.contact-form .btn {
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.contact-form .btn:hover {
+    background-color: #96bee9;
+    color: #000;
+}
+.about {
+    background-color: #313131;
+    padding: 80px 20px;
+    color: #ffffff;
+    min-height: 100vh;
+}
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.underline {
+    width: 300px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 0 auto 30px auto;
+}
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+.experience {
+    background-color: #313131;
+    padding: 80px 20px;
+    min-height: 100vh;
+    color: #ffffff;
+}
+.experience-content {
+    max-width: 900px;
+    margin: 0 auto;  
+}
+.experience-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.entry h3 {
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+.dates {
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+.entry p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #f0f0f0;
+    text-align: center;
+}
+@media (max-width: 640px) {
+    .nav-stuff {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-stuff li {
+        margin: 5px 15px;
+    }
+
+    .profile-main {
+        padding: 80px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-main h1 {
+        font-size: 36px;
+    }
+}

@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jay's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Images/jsvg.svg">
 </head>
 <body>
+    <nav class="nav-container">
+        <div class="logo">
+            <img src="Images/jsvg.svg" alt="JAY Logo">
+        </div>
+        <ul class="nav-stuff">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+        </ul>
+    </nav>
+    <section class="profile-main">
+        <img src="Images/me.jpeg" alt="Jay Baptiste" class="profile-image">
+        <div class="profile-main-content">
+            <h1>Hi, I'm Jay Baptiste.</h1>
+            <p>I'm an undergraduate student specializing in frontend development, honing my skills in building sleek and responsive websites. With a focus on modern web technologies, I'm continuously improving my design and coding expertise.</p>
+            <a href="#contactme" class="btn">Contact Me</a>
+            <a href="about.html" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div id="contactme"class="contact-content">
+            <h1>Contact Me.</h1>
+            <hr class="underline">
+            <form action="#" method="dialog" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
     
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>  
 </body>
 </html>
