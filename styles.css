@@ -49,7 +49,7 @@ nav {
     max-width: 1000px;
     margin: 0 auto;
 }
-.profile-image { /* had to google how to do this image fitting */
+.profile-image { /* zhad to google how to do this image fitting */
     width: 200px;
     height: 200px;
     border-radius: 50%;
